@@ -21,7 +21,7 @@ this better. Many great tutorials using timers in arduino - adafruit has one of 
 ---
 
 ### Video Overview
-https://www.screencast.com/t/fb2EgPdK
+WIP
 
 
 ---
@@ -30,7 +30,7 @@ https://www.screencast.com/t/fb2EgPdK
 - Raspberry Pi 3 or 4
 - Arduino Uno/Mega/other
 - 2 Xbee radios S2 or S3
-- Xbee explorer USB / Xbee breadboard explorer
+- Xbee USB explorer / Xbee breadboard explorer
 - Breadboads/Wires/LEDs
 - RGB LEDs - I'm using WS2812B
   
@@ -52,7 +52,7 @@ https://www.screencast.com/t/fb2EgPdK
       8 or 9 or both if you have 2...
   - If you have something to toggle (breadboard led, relay switch, ...) connect <br />
       to pin 4 or 5.
-  - Note the pins you choose /RaspberryPiServer_Xbee_Pi/public/index.html should match
+  - Note the pins you chose /RaspberryPiServer_Xbee_Pi/public/index.html should match
 - Open /src/main.cpp
   - Note the statements
     -  NeopixelHelper strip(8, 7, 500);
@@ -60,7 +60,7 @@ https://www.screencast.com/t/fb2EgPdK
     - PinHelper testPin4(4);
       - Something to toggle is connected to pin 4 (Breadborad led, relay switch, ...)
 - Open /lib/xbeeHelper.cpp
-  - See notes - modify to address of you Coordinator Radio attached to Raspberry Pi
+  - See notes - modify to address of your Coordinator Radio attached to Raspberry Pi
 - Load the file - figure out what went wrong -)
 
   
