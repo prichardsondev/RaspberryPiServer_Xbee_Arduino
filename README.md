@@ -3,7 +3,7 @@
 ---
 
 <img src="./img/xbee.png" width="400"/>
-<img src="./img/arduino.png" width="500"/>
+<img src="./img/arduino_setup.png" width="500"/>
 
 ---
 
