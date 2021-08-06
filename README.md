@@ -3,7 +3,7 @@
 ---
 
 <img src="./img/xbee.png" width="400"/>
-<img src="./img/serialcable.png" width="400"/>
+<img src="./img/arduino.png" width="500"/>
 
 ---
 
@@ -15,13 +15,13 @@ Communication between Raspberry Pi and Arduino using Xbee Radios <br/>
 
 Code by no-means is perfect - I welcome any input
 
-Note: Arduino code set up to be non-blocking using timers - there are libraries that my do <br />
+Note: Arduino code set up to be non-blocking using timers - there are libraries that may do <br />
 this better. Many great tutorials using timers in arduino - adafruit has one of them
 
 ---
 
 ### Video Overview
-WIP
+https://youtube.com/playlist?list=PLlnL61QfD9UbcGw8Oxz-KtOhbSqJ4oTW1
 
 
 ---
