@@ -2,8 +2,10 @@
 
 ---
 
-<img src="./img/xbee.png" width="400"/>
-<img src="./img/arduino_setup.png" width="400"/>
+<p float="left">
+  <img src="./img/xbee.png" width="400" />
+  <img src="./img/arduino_setup.png" width="400" /> 
+</p>
 
 ---
 
