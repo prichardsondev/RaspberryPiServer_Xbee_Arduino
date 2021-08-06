@@ -21,7 +21,7 @@ this better. Many great tutorials using timers in arduino - adafruit has one of 
 ---
 
 ### Video Overview
-https://youtube.com/playlist?list=PLlnL61QfD9UbcGw8Oxz-KtOhbSqJ4oTW1
+https://www.youtube.com/watch?v=zoc-5arh9Yg&list=PLlnL61QfD9UbcGw8Oxz-KtOhbSqJ4oTW1
 
 
 ---
