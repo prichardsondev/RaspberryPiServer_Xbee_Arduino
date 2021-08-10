@@ -91,12 +91,12 @@ void loop()
         }
       }
 
-      //hex color with pin to set
+      //Update requested
       if (rx.getDataLength() == 6)
       {
         if (DEBUG)
           Serial.println("update");
-          
+
         for (int i = 0; i < pinsLength; i++)
         {
           byte data[] = {pins[i].state(), pins[i].pinNumber()};
@@ -122,6 +122,7 @@ void loop()
             writeHex(data, Serial);
         }
       }
+      //hex color with pin to set
       else if (rx.getDataLength() == 4)
       {
         r = rx.getData(0);
@@ -154,15 +155,17 @@ void loop()
             neoPixels[i].callSetColor = true;
             if (DEBUG)
               Serial.println(neoPixels[i].callSetColor);
+
+            //write color to server (coordinator xbee)
+            byte data[] = {r, g, b, pin};
+            if (DEBUG)
+              writeHex(data, xbeeSerial);
+            else
+              writeHex(data, Serial);
+
+            break;
           }
         }
-
-        //write color to server (coordinator xbee)
-        byte data[] = {r, g, b, pin};
-        if (DEBUG)
-          writeHex(data, xbeeSerial);
-        else
-          writeHex(data, Serial);
       }
       //toggle single pin
       else if (rx.getDataLength() == 1)
@@ -180,11 +183,11 @@ void loop()
             byte data[] = {pins[i].state(), pins[i].pinNumber()};
 
             if (DEBUG)
-            {
               writePinState(data, xbeeSerial);
-            }
             else
               writePinState(data, Serial);
+
+            break;
           }
         }
       }
