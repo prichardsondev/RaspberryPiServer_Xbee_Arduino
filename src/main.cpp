@@ -73,10 +73,8 @@ void loop()
   xbee.readPacket();
   if (xbee.getResponse().isAvailable())
   {
-
     if (xbee.getResponse().getApiId() == ZB_RX_RESPONSE)
     {
-
       xbee.getResponse().getZBRxResponse(rx);
 
       if (DEBUG)
